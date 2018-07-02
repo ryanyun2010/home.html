@@ -1,0 +1,41 @@
+<doctype html>
+<html>
+<head>
+<title>Animal hangman</title>
+<style>
+  #wrong{
+    color:red;
+  }
+  .letter{
+    font-size:1.3em;
+    color:green;
+    font-weight:bold;
+  }
+  #line{
+    height:13px;
+    border-top:20px groove gray;
+  }
+</style> 
+</head>
+<body>
+  <a href="how_to_play.html">how to play</a>
+  <h1>Animal hangman</h1> 
+  <div id="line"></div> 
+  <label id="first" class="letter">_</label>  
+  <label id="second" class="letter">_</label> 
+  <label id="third" class="letter">_</label> 
+  <label id="fourth" class="letter">_</label> 
+  <label id="fith" class="letter">_</label><br> 
+  <input type="text" id="input">
+  <button id="sub">submit</button><br>
+  <label>wrong letters: </label>
+  <label id="wrong"></label><br>
+  <label>lives left: </label><label id="lifes">7<label> 
+  <!-- <button id="button">restart</button> -->
+  <!-- <div id="temp"></div> -->
+  <script src="../librarys/ryan.js"></script>
+  <script src="script.js"></script>
+  <script>play();</script>
+</body>
+</html>
+

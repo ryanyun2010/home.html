@@ -1,0 +1,24 @@
+5
+----
+const animals=["panda","hippo","mouse","lions","bears","birds","puppy","snake","crane","tiger","lemur","shark","foxes","ducks","goose","zebra","horse","camel","mouse","sheep","moose","rhino","snail","koala","otter","bison","sloth","llama","macaw","hyena","gecko","bongo","okapi","tapir"];
+4
+-----
+lion
+bird
+bear
+mise
+dogs
+cats
+bats
+owls
+ants
+fish
+duck
+3
+------
+dog
+cat
+bat
+owl
+ant
+fox
