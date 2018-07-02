@@ -1,0 +1,23 @@
+a{
+  text-decoration: none;
+}
+button{
+  width:24.5vw;
+  margin:auto;
+  height:70px;
+  font-size: 40px;
+  float:left;
+}
+#textarea{
+  float: right;
+  margin-top:-100px;
+  margin-right: 100px;
+}
+#things
+{
+  float:left;
+}
+iframe{
+  width:50vw;
+  height:20vw;
+} 
