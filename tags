@@ -1,0 +1,23 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+c	connect-four/script.js	/^var c=id("game");$/;"	v
+chkLine	connect-four/script.js	/^function chkLine(a,b,c,d) {$/;"	f
+chkWinner	connect-four/script.js	/^function chkWinner(bd_wrong) {$/;"	f
+draw	connect-four/script.js	/^var draw=c.getContext("2d");$/;"	v
+filemenu	index.py	/^filemenu=Menu(menubar)$/;"	v
+filename	index.py	/^filename=None$/;"	v
+let	connect-four/script.js	/^let id = function (id) {$/;"	f
+let	draw/script.js	/^    let onMouseMove = function(event) {$/;"	f
+menubar	index.py	/^menubar= Menu(root)$/;"	v
+newBoard	connect-four/script.js	/^function newBoard(){$/;"	f
+newFile	index.py	/^def newFile():$/;"	f
+openFile	index.py	/^def openFile():$/;"	f
+play	animal hangman/script.js	/^function play(){$/;"	f
+root	index.py	/^root=Tk()$/;"	v
+saveAs	index.py	/^def saveAs():$/;"	f
+showTime	home.html	/^      function showTime(){$/;"	f
+text	index.py	/^text=Text(root,width=400,height=400)$/;"	v
