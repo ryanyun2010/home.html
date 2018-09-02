@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <title>home</title>
+    <style>
+    </style>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="MyClockDisplay" class="clock">07:18:41 PM</div>
+    <button><a href="https://google.com">search</a></button>
+    <button><a href="https://drive.google.com/drive/my-drive">drive</a></button>  
+    <button><a href="https://youtube.com">youtube</a></button>
+    <div id="apps-div">
+      <button id="sheets"><a href="https://sheets.google.com">sheets</a></button>
+      <button id="draw"><a href="https://drawings.google.com">drawings</a></button>
+      <button id="forms"><a href="https://forms.google.com">forms</a></button>
+      <button id="docs"><a href="https://docs.google.com">docs</a></button>
+      <button id="slides"><a href="https://slides.google.com">slides</a></button>
+    </div>
+    <br>
+    <a target="_blank" href="https://scratch.mit.edu/projects/222585860/#editor" style="text-decaration:none"><img src="panda2.png" alt="panda" width="100px"><br>play panda land</a>
+    <a style="width:30%px;border:1px solid" id="button">timer</a>
+    <a style="width:30%px;border:1px solid" id="button2">search</a><br><br>
+    <img draggable="true" src="panda.png" alt="panda" width="300px" id="panda" >
+    <br>
+    <a id="panda_b">panda</a>
+    <a id="arden_b">dog</a>
+
+
+    <div id="textarea">
+      <h2>white board</h2>
+      <textarea name="" id="" cols="100" rows="50"></textarea>
+    </div>
+
+    <iframe src="text.html" frameborder="1" name="slide"></iframe>
+    <button><a width="100%" height="100%" href="draw/index.html" target="slide">draw</a></button>
+    <button><a width="100%" height="100%" href="text.html" target="slide">text formatter</a></button>
+    <button><a width="100%" height="100%" href="animal hangman/index.html" target="slide">animal hangman</a></button>
+    <button><a width="100%" height="100%" href="connect-four/index.html" target="slide">connect four</a></button>
+    <!-- <iframe style="border-width: 0px" width="50%" height="auto" src="websites/website/text.html"></iframe>
+      <iframe style="border-width: 0px" width="50%" height="50%" src="websites/draw/index.html"></iframe> -->
+      <script src="ryan.js"></script>
+      <script>
+        let button = document.getElementById("button");
+let div=document.getElementById("apps-div");
+button.addEventListener("click",function(){
+  let time=prompt("time");
+  let a = document.createElement("a");
+  let s = document.createElement("span");
+  s.innerHTML="click";
+  a.setAttribute("href","https://www.online-stopwatch.com/timer/"+time+"minutes");
+  a.appendChild(s);
+  div.appendChild(a);
+  console.log(a);
+});
+let button2 = document.getElementById("button2");
+button2.addEventListener("click",function(){
+  var search = prompt("search + for space");
+  var linka="https://www.google.com/search?q="+search+"&oq="+search+"&aqs=chrome..69i57j0l5.2302j0j8&sourceid=chrome&ie=UTF-8";
+  document.write("<a href="+linka+">click"+"</a>");
+})
+
+function showTime(){
+  var date = new Date();
+  var h = date.getHours(); // 0 - 23
+  var m = date.getMinutes(); // 0 - 59
+  var s = date.getSeconds(); // 0 - 59
+  var session = "AM";
+
+  if(h >= 12){
+    h = h - 12;
+    session = "PM";
+  }
+
+  if(h == 0){
+    h = 12;
+  }
+
+  h = (h < 10) ? "0" + h : h;
+  m = (m < 10) ? "0" + m : m;
+  s = (s < 10) ? "0" + s : s;
+
+  var time = h + ":" + m + " " + session;
+  document.getElementById("MyClockDisplay").innerText = time;
+  document.getElementById("MyClockDisplay").textContent = time;
+
+  setTimeout(showTime, 1000);
+}
+
+showTime();
+
+let y;
+let x;
+let panda =document.getElementById("panda");
+let panda_b=document.getElementById("panda_b");
+let dog_b=document.getElementById("arden_b");
+panda.style.position="absolute";
+panda.style.top=573;
+panda.style.left=500; 
+let ofsety=100;
+let ofsetx=100;
+panda.addEventListener("dragend",function(e) {
+  // console.log("mouse down works"+e);
+  console.log("x: "+e.clientX+"            y: "+e.clientY);
+  x=e.clientX;
+  y = e.clientY;
+  console.log("x: "+x+"            y: "+y);
+  panda.style.top=y-ofsety;               
+  panda.style.left=x-ofsetx;
+});
+dog_b.addEventListener("click",function(){
+   panda.src="arden.png";
+  panda.width="300"
+  ofsety=-100;
+  ofsetx=200;
+ 
+});
+panda_b.addEventListener("click",function(){
+  panda.src="panda.png";
+  ofsety=100;
+  ofsetx=100;
+})
+      </script>
+  </body>
+</html>
